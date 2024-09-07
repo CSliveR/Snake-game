@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Help</title>
+</head>
+<body>
+    <header class="headerHelp">
+        <h1>Welcome to the snake game.</h1>
+        <button class="leaveBtn">Leave</button>
+    </header>
+    <main>
+        <section>
+            <h2>What is the main goal ?</h2>
+            <p>The goal is to make the best score you can by eating the food which appears randomly in the garden.</p>
+        </section>
+        <section>
+            <h2>How to play ?</h2>
+            <p>You can control the snake by clicking on the directionnal arrows. The snake goes automatically further on the direction you indicated.</p>
+            <p>The snake is divided into two parts: the head, which is red, and the body, which is dark green.</p>
+            <p>The food on purple can only be eaten by passing away the head snake onto the food.</p>
+        </section>
+        <section>
+            <h2>When the game stops ?</h2>
+            <p>There are 3 possible ways to stop the game :</p>
+            <p>You can stop the game by clicking the leave button at the top right corner.</p>
+            <p>You lose the game when the snake's head or body touches the garden's boundaries.</p>
+            <p>You lose the game if the snake's head touches its body. In this case, the snake bites its tail.</p>
+            <p>Be careful: if the snake moves on a direction and goes immediately to the opposite, the snake bites its tail.</p>            
+        </section>
+    </main>
+    <footer>
+        Now, you all know about this snake game.
+        Have fun ! 
+    </footer>
+
+    <script>
+        
+    const leaveBtn = document.querySelector('.leaveBtn');
+
+    leaveBtn.addEventListener('click', () => {
+        location.assign("menu.html");
+    });
+    </script>
+</body>
+</html>

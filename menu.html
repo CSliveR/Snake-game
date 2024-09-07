@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+</head>
+<body>
+    <header class="menuHeader">
+        <img id="menuImg" src="img/menu.png" alt="Menu du jeu">
+    </header>
+
+    <main class="mainMenu">        
+        <div>
+            <p>Last score</p>
+            <p id="scorePrecedent">0</p>
+        </div>
+
+        <div>
+            <p>High score</p>
+            <p id="record">0</p>
+        </div>
+    </main>
+
+    <footer>
+        <button class="playBtn">Play</button>
+        <button class="helpBtn">Help</button>
+    </footer>
+
+    <script src="snake.js"></script>
+
+    <script>
+        const scorePrecedent = localStorage.getItem("scorePrecedent");
+        const record = localStorage.getItem("record");
+
+        document.getElementById("scorePrecedent").textContent = scorePrecedent;
+        document.getElementById("record").textContent = record;
+    </script>
+</body>
+</html>

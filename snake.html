@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake</title>
+</head>
+<body>
+    <header class="headerGame">
+        <p id="number">Score: 0</p>
+        <button class="leaveBtn">Leave</button>
+    </header>
+
+    <main class="playArea">
+        <div id="snake">
+            <div class="segment" id="snakeHead"></div>
+            <div class="segment" id="snakeBody"></div>
+        </div>
+
+        <div id="food"></div>
+
+        <div class="gameOverScreen">
+            <div>
+                <h1>Game Over</h1>
+                <p id="zoneMessage">The snake has passed away the garden.</p>
+                <p id="tailMessage">The snake bited his tail.</p>
+                <p id="scoreMessage"></p>
+                <p id="newHighScoreMessage">New high score.</p>
+            </div>
+
+            <div>
+                <button class="playBtn">Try again</button>
+                <button class="helpBtn">Help</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="snake.js"></script>
+</body>
+</html>

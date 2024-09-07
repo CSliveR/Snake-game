@@ -1,0 +1,136 @@
+:root{
+    --greenColor:#13CB2C;
+    --redColor: #DD0048;
+}
+
+body, button{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color: var(--greenColor);
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.menuHeader{
+    display: flex;
+    justify-content: center;
+}
+
+#menuImg{
+    height: 40vh;
+}
+
+.mainMenu{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.mainMenu div{
+    border: 1px solid var(--greenColor);
+    border-radius: 25% 10%;
+    padding: 50px;
+    margin-bottom: 15vh;
+}
+
+#scorePrecedent, #record{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+button{     
+    padding: 20px;
+    border-radius: 25% 10%;
+    width: 150px;
+    border: 3px solid;
+}
+
+.playBtn{
+    color: var(--greenColor);
+}
+
+.helpBtn{
+    color: lightblue;
+}
+
+.leaveBtn{
+    color: var(--redColor);
+    border: 3px solid var(--redColor);
+}
+
+.playBtn:hover, .leaveBtn:hover, .helpBtn:hover{
+    color: black;
+    background-color: #13CB2C;
+}
+
+.leaveBtn:hover{
+    background-color: #DD0048;
+}
+
+.helpBtn:hover{
+    background-color: lightskyblue;
+}
+
+.headerGame{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40vw;
+}
+
+.playArea{
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+    background-color: var(--greenColor);
+}
+
+.segment{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    transition: transform 0.2s ease-in-out;
+}
+
+#snakeHead{
+    background-color: #DD0048;
+}
+
+#food{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #DD0048;
+}
+
+.gameOverScreen{
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#DD0048;
+    height: 100%;
+}
+
+#zoneMessage, #tailMessage, #newHighScoreMessage{
+    display: none;
+}
+
+.headerHelp{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20vw;
+}
+
+h2{
+    margin-left: 1%;
+}
+
